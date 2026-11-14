@@ -1,0 +1,7 @@
+{
+  "background_color": [0.035, 0.045, 0.065, 1.0],
+  "ambient_color": [0.34, 0.38, 0.48, 1.0],
+  "sun_color": [0.95, 0.82, 0.62, 1.0],
+  "shadow_mapping": false,
+  "antialiasing": false
+}
