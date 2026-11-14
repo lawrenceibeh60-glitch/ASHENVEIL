@@ -1,42 +1,178 @@
-ASHENVEIL PROPRIETARY LICENSE
+ASHENVEIL — PROPRIETARY ALL RIGHTS RESERVED LICENCE
+Version 2.0
 Copyright (c) 2026 lawrenceibeh60-glitch. All rights reserved.
 
-ASHENVEIL and all source code, assets, documentation, designs, characters,
-story elements, artwork, and other materials in this repository are
-proprietary materials of the copyright holder, except where a file or
-third-party notice states otherwise.
+IMPORTANT: THIS IS A PROPRIETARY, SOURCE-VISIBLE LICENCE. IT IS NOT AN
+OPEN-SOURCE LICENCE, A FREE-SOFTWARE LICENCE, OR A PUBLIC-DOMAIN DEDICATION.
 
-PERMITTED ACCESS
-You may view and read this public repository through GitHub for personal
-reference and evaluation only.
+1. DEFINITIONS
 
-RESTRICTIONS
-Unless you receive prior, express, written permission from the copyright
-holder, you may not:
+"Licensor" means the copyright holder identified above.
+"Materials" means the ASHENVEIL project and all material in this repository
+that the Licensor owns or is authorised to license, including source code,
+object code, scripts, tools, architecture, designs, documentation, text,
+story, characters, dialogue, settings, names, artwork, models, animations,
+textures, audio, visual effects, interfaces, and other creative or technical
+content, in any format or medium.
+"Third-Party Material" means material identified as belonging to another
+rights holder or distributed under a separate licence.
 
-1. Copy, reproduce, republish, redistribute, sublicense, sell, or otherwise
-   make any part of the materials available elsewhere.
-2. Modify, adapt, translate, create derivative works from, or incorporate
-   the materials into another project.
-3. Use the materials, in whole or in part, for commercial purposes.
-4. Use the materials to train, fine-tune, or evaluate machine-learning
-   models or datasets.
-5. Remove or alter copyright, attribution, or proprietary notices.
+2. LIMITED PERMISSION TO VIEW
 
-NO OTHER RIGHTS
-No licence or other rights are granted by implication, estoppel, or otherwise.
-Downloading, forking, or accessing this repository does not grant permission
-to use, modify, distribute, or commercially exploit its contents.
+Subject to applicable law and GitHub's platform terms, the public may access
+and view the repository through GitHub for personal, informational review.
+This narrow permission does not grant a right to exploit, extract, reproduce,
+or reuse the Materials.
 
-THIRD-PARTY MATERIALS
-Materials identified as third-party content remain subject to their own
-licences and terms. This licence does not override those terms.
+No permission is granted to download or use the Materials for development,
+production, publication, distribution, or any other purpose beyond viewing
+the repository through the platform, except where the Licensor gives prior
+written permission or applicable law provides a non-waivable right.
 
-DISCLAIMER
-The materials are provided "AS IS", without warranties of any kind, to the
-maximum extent permitted by applicable law.
+3. ALL RIGHTS RESERVED — RESTRICTED ACTIVITIES
 
-For permission requests, contact the repository owner through GitHub.
+Except for the limited viewing permission in Section 2, and except where
+applicable law expressly prohibits restriction, you must not do any of the
+following without the Licensor's prior, express, written permission:
 
-This notice is a project-specific proprietary licence, not an open-source
-licence. It is not a substitute for jurisdiction-specific legal advice.
+a. Copy, reproduce, publish, republish, distribute, transmit, display, perform,
+   make available, sublicense, sell, rent, lease, or otherwise exploit any
+   Materials, in whole or in part.
+
+b. Modify, adapt, translate, port, transform, reverse engineer, decompile,
+   disassemble, or create derivative works based on the Materials, except to
+   the extent a restriction is prohibited by applicable law.
+
+c. Incorporate any Materials into another game, application, product, service,
+   repository, library, dataset, template, asset pack, training corpus, or
+   commercial or non-commercial project.
+
+d. Use the Materials or any portion of them for commercial purposes, paid
+   products, advertising, monetisation, fundraising, client work, or services
+   offered to third parties.
+
+e. Use the Materials to train, fine-tune, distil, benchmark, test, evaluate,
+   validate, or improve any machine-learning or artificial-intelligence
+   model or system; to create embeddings or datasets from them; or to supply
+   them as retrieval, grounding, or reference content for such systems.
+
+f. Scrape, bulk-download, mirror, archive, index, or systematically extract
+   the Materials, except for ordinary platform functions or activity
+   expressly authorised in writing by the Licensor.
+
+g. Remove, obscure, alter, or misrepresent copyright, licence, attribution,
+   provenance, or proprietary notices.
+
+h. Claim authorship, ownership, endorsement, sponsorship, or affiliation
+   with the Materials or ASHENVEIL when that claim is not true.
+
+i. Use ASHENVEIL names, logos, branding, characters, or other identifying
+   marks in a way that suggests official affiliation, endorsement, or origin
+   without written permission.
+
+4. NO IMPLIED LICENCE; NO TRANSFER OF OWNERSHIP
+
+All rights not expressly granted in this licence are reserved by the Licensor.
+No licence is granted by implication, estoppel, exhaustion, repository
+visibility, possession of a copy, or any other theory, except to the extent
+applicable law requires otherwise.
+
+Accessing, starring, watching, cloning, forking, or downloading the public
+repository does not itself grant permission to reuse the Materials. GitHub
+may provide platform-specific functionality and permissions under its own
+terms; this licence does not alter GitHub's terms or claim to disable
+platform features.
+
+No ownership of the Materials is transferred to you.
+
+5. PERMISSIONS IN WRITING
+
+A permission is valid only if it is explicit, written, and issued by the
+Licensor or an authorised representative. Permission must identify the
+Materials and the permitted purpose, scope, duration, territory, and any
+conditions. Silence, informal discussion, or a public repository setting
+does not constitute permission.
+
+Unless the written permission says otherwise, permission is non-exclusive,
+non-transferable, non-sublicensable, limited to its stated purpose, and may
+not be extended to other Materials or uses.
+
+6. CONTRIBUTIONS
+
+Do not submit code, assets, documentation, or other contributions on the
+assumption that they will be accepted or that this licence automatically
+governs them. Before a contribution is merged or otherwise incorporated,
+the Licensor may require a separate written contribution agreement or
+written confirmation of the rights and permissions needed to use it.
+
+Nothing in this section takes ownership of a contributor's independent work
+without their agreement.
+
+7. THIRD-PARTY MATERIALS AND OPEN-SOURCE DEPENDENCIES
+
+Third-Party Material is not relicensed by this document. It remains governed
+by the relevant owner's licence and terms. If a third-party licence grants
+rights that cannot lawfully be restricted by this project licence, those
+rights remain unaffected.
+
+The Licensor does not claim ownership of third-party libraries, engines,
+fonts, models, audio, or other materials merely because they are used by,
+referenced by, or stored alongside ASHENVEIL. Separate notices and licence
+files take precedence for the relevant Third-Party Material.
+
+8. TERMINATION
+
+Any permission under this licence automatically terminates if you materially
+breach its terms. Upon termination, you must stop the unauthorised use and,
+where legally permissible, delete copies of the Materials in your possession
+or control. Termination does not remove rights or remedies that accrued
+before termination.
+
+9. DISCLAIMER OF WARRANTY
+
+To the maximum extent permitted by applicable law, the Materials are
+provided "AS IS" and "AS AVAILABLE", without warranties or conditions of
+any kind, whether express, implied, statutory, or otherwise, including
+warranties of merchantability, fitness for a particular purpose,
+non-infringement, accuracy, or uninterrupted availability.
+
+10. LIMITATION OF LIABILITY
+
+To the maximum extent permitted by applicable law, the Licensor will not be
+liable for indirect, incidental, special, consequential, exemplary, or
+punitive damages, or for loss of data, profits, business, goodwill, or
+opportunity arising from access to or use of the Materials. Nothing in this
+licence excludes liability that cannot lawfully be excluded.
+
+11. ENFORCEMENT AND GENERAL TERMS
+
+The Licensor reserves all rights and remedies available under applicable
+law in relation to infringement or breach. No statement in this licence
+guarantees that infringement can be technically prevented or that a
+particular remedy will be available in every jurisdiction.
+
+If any provision is held unenforceable, it will be limited to the minimum
+extent necessary, and the remaining provisions will continue to apply.
+Failure to enforce a provision is not a waiver of the right to enforce it
+later. This licence does not create a partnership, agency, or employment
+relationship.
+
+12. GOVERNING LAW
+
+Any governing law, jurisdiction, and dispute-resolution provisions will be
+determined by applicable law and any separate written agreement between the
+parties. Nothing here removes mandatory legal protections or jurisdictional
+rules that cannot lawfully be waived.
+
+13. CONTACT
+
+For written permission requests, identify the specific Materials and
+intended use and contact the repository owner through GitHub.
+
+Repository:
+https://github.com/lawrenceibeh60-glitch/ASHENVEIL
+
+This is a project-specific proprietary licence template, not legal advice.
+Its interpretation and enforceability depend on the facts and applicable
+law. For commercial release or enforcement, obtain review from a qualified
+lawyer in the relevant jurisdiction.
