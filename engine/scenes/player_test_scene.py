@@ -1,5 +1,5 @@
 """Greybox arena for validating M1 player movement and camera behaviour."""
-from panda3d.core import AmbientLight, CardMaker, DirectionalLight, LColor
+from panda3d.core import AmbientLight, CardMaker, ClockObject, DirectionalLight, LColor
 
 from engine.player.player_controller import PlayerController
 from engine.camera.third_person_camera import ThirdPersonCamera
@@ -64,7 +64,7 @@ class PlayerTestScene:
         self.controller = PlayerController(self.app, self.input, self.player)
 
     def _update(self, task):
-        dt = self.app.clock.getDt()
+        dt = ClockObject.getGlobalClock().getDt()
         self.controller.update(dt, self.camera.heading)
         self.camera.update()
         return task.cont
