@@ -1,0 +1,9 @@
+{
+  "move_forward": "w",
+  "move_backward": "s",
+  "move_left": "a",
+  "move_right": "d",
+  "interact": "e",
+  "jump": "space",
+  "pause": "escape"
+}
