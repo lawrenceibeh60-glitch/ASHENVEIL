@@ -288,24 +288,74 @@ The first foundation milestone should not be considered complete until:
 - Document meaningful architecture and gameplay decisions.
 - Do not mark roadmap items complete until they have been implemented and verified.
 
+## Getting started
+
+### Requirements
+- Python 3.10 or newer (Python 3.11 is the initial CI target).
+- A desktop environment supported by Panda3D.
+- Git.
+
+### Install and run
+
+Create a virtual environment:
+
+    python -m venv .venv
+
+Activate it on Windows PowerShell:
+
+    .venv\Scripts\Activate.ps1
+
+Or on macOS/Linux:
+
+    source .venv/bin/activate
+
+Install dependencies and launch:
+
+    python -m pip install --upgrade pip
+    python -m pip install -r requirements.txt
+    python main.py
+
+The current M0 scene is a lightweight procedural lighting and geometry test scene. Press Esc to close it. It is a technical bootstrap, not final game art or gameplay.
+
+### Run checks
+
+    python -m pytest -q
+    python -m compileall -q engine tools tests main.py
+
+### Asset inventory
+
+Place candidate models under assets/ and run:
+
+    python -m tools.asset_validator assets
+
+The first validator inventories supported extensions and flags common unsupported source formats. It does not certify rigging, animation, material fidelity, or licence compliance. The Panda3D model-loading wrapper is in engine/assets/model_loader.py.
+
+## M0 implementation status
+
+Implemented in the M0 development branch:
+- [x] Python/Panda3D application entry point and configuration scaffold.
+- [x] Procedural bootstrap scene with camera and lighting.
+- [x] Model-loading wrapper for supported model formats.
+- [x] Initial asset inventory utility.
+- [x] Unit tests for configuration and asset inventory.
+- [x] GitHub Actions CI workflow for Python checks.
+
+Still requiring verification:
+- [ ] Install and test on a real Windows machine.
+- [ ] Verify the Panda3D window launches on target hardware.
+- [ ] Verify an external GLB model imports and renders correctly.
+- [ ] Record a successful end-to-end M0 run.
+
+The player controller, combat, enemies, NPCs, quests, production environments, save/load, and Windows packaging remain future milestones.
+
 ## Current status
 
-**Current phase:** Repository and project foundation.
+**Current phase:** M0 — Production foundation in progress.
 
-Completed:
+Completed previously:
 - [x] Public GitHub repository created.
 - [x] Proprietary All Rights Reserved licence added.
-
-Not yet implemented or verified:
-- [ ] Panda3D application and launch entry point
-- [ ] Dependency setup
-- [ ] Initial scene and rendering
-- [ ] Asset import pipeline
-- [ ] Player controller and camera
-- [ ] Combat, enemies, NPCs, quests, and RPG systems
-- [ ] World regions and narrative content
-- [ ] Save/load
-- [ ] Automated tests and Windows packaging
+- [x] Project overview and development roadmap documented.
 
 Repository: https://github.com/lawrenceibeh60-glitch/ASHENVEIL
 
