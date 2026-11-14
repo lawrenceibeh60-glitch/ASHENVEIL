@@ -350,14 +350,11 @@ The player controller, combat, enemies, NPCs, quests, production environments, s
 
 ## Current status
 
-**Current phase:** M0 — Production foundation in progress.
+- M0 foundation: project bootstrap, configuration loading, procedural test scene, asset inventory helper, and CI checks are present.
+- M1 in progress: keyboard input manager, camera-relative player movement, jump/gravity, mouse-orbit follow camera, and a greybox player test arena are being implemented.
+- The M1 player uses a temporary primitive model. A final character model, animation controller, full collision handling, and Windows end-to-end verification are not yet complete.
+- CI validates Python compilation and unit tests; a passing CI run does not replace testing the graphical application on Windows.
 
-Completed previously:
-- [x] Public GitHub repository created.
-- [x] Proprietary All Rights Reserved licence added.
-- [x] Project overview and development roadmap documented.
-
-Repository: https://github.com/lawrenceibeh60-glitch/ASHENVEIL
 
 ## Licence and permissions
 
