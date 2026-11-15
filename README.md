@@ -256,7 +256,7 @@ The roadmap describes intended work. A milestone is only marked complete when it
 | Milestone | Scope | Status |
 |---|---|---|
 | M0 — Production foundation | Repository structure, Panda3D setup, dependency management, asset import foundation, launchable test scene, automated checks | ⬜ Planned |
-| M1 — Player foundation | Third-person camera, movement, jumping, interaction, animation, collision and physics | ⬜ Planned |
+| M1 — Player foundation | Third-person camera, movement, jumping, interaction, animation, collision and physics | 🟡 In progress |
 | M2 — Combat foundation | Sword combat, blocking, dodging, stamina, health/damage, enemy behaviour | ⬜ Planned |
 | M3 — World foundation | Greyhaven, terrain, vegetation, buildings, interiors, atmosphere, region transitions | ⬜ Planned |
 | M4 — RPG systems | Inventory, equipment, attributes, progression, items, skills, interaction | ⬜ Planned |
@@ -351,8 +351,9 @@ The player controller, combat, enemies, NPCs, quests, production environments, s
 ## Current status
 
 - M0 foundation: project bootstrap, configuration loading, procedural test scene, asset inventory helper, and CI checks are present.
-- M1 in progress: keyboard input manager, camera-relative player movement, jump/gravity, mouse-orbit follow camera, and a greybox player test arena are being implemented.
-- The M1 player uses a temporary primitive model. A final character model, animation controller, full collision handling, and Windows end-to-end verification are not yet complete.
+- M1 foundation: config-driven input, camera-relative movement, jumping, mouse-orbit camera, greybox test arena, and deterministic movement tests are implemented on `m1/player-foundation`.
+- M1.2 in progress on `m1.2/collision-terrain-camera`: axis-aligned obstacle collision with wall sliding, rectangular support surfaces, raised-platform jump landing, world bounds, camera obstruction correction, and collision unit tests.
+- The player remains a primitive placeholder. General imported-mesh collision, slopes/stairs, final character model and animations, automated CI confirmation, and Windows graphical testing remain outstanding.
 - CI validates Python compilation and unit tests; a passing CI run does not replace testing the graphical application on Windows.
 
 
