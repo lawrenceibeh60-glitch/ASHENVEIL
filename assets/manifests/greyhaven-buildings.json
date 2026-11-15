@@ -1,0 +1,15 @@
+{
+  "asset_id": "greyhaven-building-pack-v1",
+  "display_name": "Greyhaven Building Pack",
+  "format": "glb",
+  "gltf_version": 2,
+  "source_release": "https://github.com/lawrenceibeh60-glitch/ASHENVEIL/releases/tag/greyhaven-assets-v1",
+  "download_asset": "building_pack_free_low-poly_3d_model_in_fbx.glb",
+  "install_path": "assets/environments/greyhaven/building_pack_free_low-poly_3d_model_in_fbx.glb",
+  "expected_size_bytes": 31936184,
+  "mesh_count": 9,
+  "materials": 9,
+  "embedded_images": 9,
+  "integration_status": "geometry_inspected_panda3d_runtime_pending",
+  "notes": "The GLB contains nine mesh nodes in one assembled showcase scene, with nine materials and nine embedded PNG images. A separate geometry preview shows medieval building forms and a windmill-like structure. Generic node names do not identify individual structures, so final placement and per-structure collision bounds require Panda3D runtime inspection."
+}

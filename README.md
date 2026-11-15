@@ -370,3 +370,22 @@ For permission requests, contact the repository owner through GitHub.
 ---
 
 *ASHENVEIL is being built step by step. This README records the intended direction and current status; implementation and verified progress take precedence over plans.*
+
+
+## Greyhaven building asset preview
+
+The first Greyhaven building pack is distributed as a separate GitHub Release asset so the 31 MB binary does not need to be committed into the source tree.
+
+Install the GLB from the release:
+
+```powershell
+python tools/install_greyhaven_assets.py
+```
+
+Open the standalone Panda3D preview:
+
+```powershell
+python tools/preview_greyhaven_assets.py
+```
+
+The preview is deliberately separate from the player test scene and automatically frames the imported model using its bounds. A geometry preview confirms a compact showcase arrangement of medieval building forms and a windmill-like structure. The GLB contains nine meshes, nine materials, and nine embedded PNG images, but its generic mesh names do not identify nine separate houses. Final texture fidelity, scale, ground contact, Windows performance, and per-structure collision boundaries still require a run in the actual Panda3D window. See `docs/GREYHAVEN_ASSET_INSPECTION.md` for the inspection report. Do not treat this preview foundation as completed playable-world integration.
