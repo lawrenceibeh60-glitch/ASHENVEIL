@@ -388,6 +388,4 @@ Open the standalone Panda3D preview:
 python tools/preview_greyhaven_assets.py
 ```
 
-The preview is deliberately separate from the player test scene. It allows the model's appearance, orientation, scale, and layout to be checked before it is placed into the playable Greyhaven environment. The GLB is validated for its binary glTF header and declared file length before installation.
-
-Asset metadata is recorded in `assets/manifests/greyhaven-buildings.json`. The current pack has nine meshes, nine materials, and nine embedded images. The mesh names are generic, so individual building identities and accurate per-building collision boundaries remain pending visual inspection in the Panda3D window. Do not treat the preview as completed world integration.
+The preview is deliberately separate from the player test scene and automatically frames the imported model using its bounds. A geometry preview confirms a compact showcase arrangement of medieval building forms and a windmill-like structure. The GLB contains nine meshes, nine materials, and nine embedded PNG images, but its generic mesh names do not identify nine separate houses. Final texture fidelity, scale, ground contact, Windows performance, and per-structure collision boundaries still require a run in the actual Panda3D window. See `docs/GREYHAVEN_ASSET_INSPECTION.md` for the inspection report. Do not treat this preview foundation as completed playable-world integration.
