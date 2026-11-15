@@ -10,6 +10,6 @@
   "mesh_count": 9,
   "materials": 9,
   "embedded_images": 9,
-  "integration_status": "preview_pending",
-  "notes": "The GLB has been structurally inspected. Individual mesh identities, placement, scale in-game, and collision bounds still require Panda3D runtime review."
+  "integration_status": "geometry_inspected_panda3d_runtime_pending",
+  "notes": "The GLB contains nine mesh nodes in one assembled showcase scene, with nine materials and nine embedded PNG images. A separate geometry preview shows medieval building forms and a windmill-like structure. Generic node names do not identify individual structures, so final placement and per-structure collision bounds require Panda3D runtime inspection."
 }
