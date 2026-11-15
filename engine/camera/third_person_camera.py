@@ -1,18 +1,27 @@
-"""Orbiting third-person follow camera with mouse-look."""
+"""Orbiting third-person follow camera with obstacle-aware positioning."""
 from math import cos, radians, sin
-from panda3d.core import WindowProperties, Vec3
+
+from panda3d.core import Vec3, WindowProperties
 
 
 class ThirdPersonCamera:
-    """Follows a target while allowing mouse-controlled orbit."""
+    """Follows a target, supports mouse orbit and avoids world obstacles."""
 
-    def __init__(self, app, target, distance: float = 8.0,
-                 height: float = 2.0, sensitivity: float = 110.0) -> None:
+    def __init__(
+        self,
+        app,
+        target,
+        distance: float = 8.0,
+        height: float = 2.0,
+        sensitivity: float = 110.0,
+        collision_world=None,
+    ) -> None:
         self.app = app
         self.target = target
         self.distance = distance
         self.height = height
         self.sensitivity = sensitivity
+        self.collision_world = collision_world
         self.heading = 0.0
         self.pitch = 12.0
         self.min_pitch = -8.0
@@ -25,7 +34,9 @@ class ThirdPersonCamera:
         props = WindowProperties()
         props.setCursorHidden(True)
         self.app.win.requestProperties(props)
-        self.app.win.movePointer(0, self.app.win.getXSize() // 2, self.app.win.getYSize() // 2)
+        self.app.win.movePointer(
+            0, self.app.win.getXSize() // 2, self.app.win.getYSize() // 2
+        )
 
     def update(self) -> None:
         win = self.app.win
@@ -35,12 +46,33 @@ class ThirdPersonCamera:
             dx = pointer.getX() - center_x
             dy = pointer.getY() - center_y
             self.heading -= dx * self.sensitivity * 0.001
-            self.pitch = max(self.min_pitch, min(self.max_pitch,
-                self.pitch + dy * self.sensitivity * 0.001))
+            self.pitch = max(
+                self.min_pitch,
+                min(
+                    self.max_pitch,
+                    self.pitch + dy * self.sensitivity * 0.001,
+                ),
+            )
             win.movePointer(0, center_x, center_y)
 
-        h, p = radians(self.heading), radians(self.pitch)
-        direction = Vec3(sin(h) * cos(p), -cos(h) * cos(p), sin(p))
+        heading = radians(self.heading)
+        pitch = radians(self.pitch)
+        direction = Vec3(
+            sin(heading) * cos(pitch),
+            -cos(heading) * cos(pitch),
+            sin(pitch),
+        )
         target_pos = self.target.getPos(self.app.render) + Vec3(0, 0, self.height)
-        self.app.camera.setPos(target_pos - direction * self.distance)
+        desired = target_pos - direction * self.distance
+
+        if self.collision_world is not None:
+            target_tuple = (target_pos.x, target_pos.y, target_pos.z)
+            desired_tuple = (desired.x, desired.y, desired.z)
+            camera_position = self.collision_world.resolve_camera_position(
+                target_tuple, desired_tuple
+            )
+            self.app.camera.setPos(*camera_position)
+        else:
+            self.app.camera.setPos(desired)
+
         self.app.camera.lookAt(target_pos)
