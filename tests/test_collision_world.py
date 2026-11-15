@@ -76,3 +76,11 @@ def test_camera_position_is_unchanged_without_obstruction():
 def test_invalid_world_limit_is_rejected():
     with pytest.raises(ValueError):
         CollisionWorld(world_limit=0)
+
+def test_player_can_slide_along_obstacle_edge():
+    world = make_world()
+    x, y = world.move_horizontal(
+        -2, 3, 0, 3, 2, radius=0.5
+    )
+    assert x == pytest.approx(-1.5)
+    assert y == pytest.approx(5)
